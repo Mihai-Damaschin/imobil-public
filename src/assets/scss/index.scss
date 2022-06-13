@@ -1,0 +1,116 @@
+@import "../../../node_modules/antd/dist/antd.css";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.site-layout-content {
+  min-height: 280px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 10px;
+}
+#components-layout-demo-top .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+.ant-row-rtl #components-layout-demo-top .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+
+.header-card {
+  border-radius: 10px;
+  border-bottom: 1px solid #00000020;
+  margin-bottom: 20px;
+
+  &:last-child {
+    border: none;
+    margin-bottom: 0;
+  }
+
+  .image {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 60px;
+  }
+
+  .ant-page-header-rtl .image {
+    margin: 0 60px 0 0;
+  }
+
+  .example-link {
+    margin-right: 16px;
+    line-height: 24px;
+    display: inline-flex;
+    align-items: center;
+
+    > span {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+  [data-theme="compact"] .example-link {
+    line-height: 20px;
+  }
+  .example-link-icon {
+    margin-right: 8px;
+  }
+
+  [data-theme="compact"] .example-link-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ant-page-header-rtl .example-link {
+    float: right;
+    margin-right: 0;
+    margin-left: 16px;
+  }
+  .ant-page-header-rtl .example-link-icon {
+    margin-right: 0;
+    margin-left: 8px;
+  }
+
+  @media (max-width: 768px) {
+    .image {
+      flex: 100%;
+      margin: 24px 0 0;
+    }
+  }
+}
+
+.main-carousel {
+  height: 400px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    height: 400px;
+  }
+}
+
+.main-menu {
+  justify-content: flex-end;
+}
+
+.gallery-preview {
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
